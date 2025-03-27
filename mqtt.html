@@ -24,7 +24,7 @@
 
       client.on("message", function (topic, message) {
         console.log(topic + ": " + message.toString());
-        document.getElementById("message").innerHTML = do;cument.getElementById("demo").innerHTML + "<br>" + message.toString()
+        document.getElementById("message").innerHTML = document.getElementById("message").innerHTML + "<br>" + message.toString()
       });
 
       document.querySelector("button").addEventListener("click", function () {
