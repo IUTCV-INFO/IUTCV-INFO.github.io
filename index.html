@@ -62,15 +62,17 @@
           
         ]);
 
+        var colors = ['#a6cee3', '#b2df8a', '#fb9a99', '#fdbf6f',
+                  '#cab2d6', '#ffff99', '#1f78b4', '#33a02c'];
+
         // Sets chart options.
         var options = {
           width: "100%",
-          colors: [
-            '#a6cee3',        // Custom color palette for sankey links.
-            '#1f78b4',        // Nodes will cycle through this palette
-            '#b2df8a',        // giving the links for that node the color.
-            '#33a02c'
-          ]
+          colors: colors,
+          link: {
+            colorMode: 'gradient',
+            colors: colors
+          }
         };
 
         // Instantiates and draws our chart, passing in some options.
